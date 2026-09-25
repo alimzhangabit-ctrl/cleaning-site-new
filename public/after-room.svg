@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <!-- Crisp bright clean wall -->
+    <linearGradient id="wallGradAfter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+
+    <!-- Warm gleaming luxury polished wood/parquet floor -->
+    <linearGradient id="floorGradAfter" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B45309" />
+      <stop offset="40%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#92400E" />
+    </linearGradient>
+
+    <!-- Window sunny glow -->
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#BAE6FD" />
+    </linearGradient>
+
+    <!-- Floor mirror reflection -->
+    <linearGradient id="reflectionGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background wall -->
+  <rect width="800" height="340" fill="url(#wallGradAfter)" />
+
+  <!-- Crisp white modern baseboard -->
+  <rect y="332" width="800" height="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+
+  <!-- Floor: Gleaming Polished Parquet -->
+  <polygon points="0,340 800,340 800,500 0,500" fill="url(#floorGradAfter)" />
+
+  <!-- Floor sheen / gloss reflection lines -->
+  <polygon points="120,340 260,340 320,500 140,500" fill="url(#reflectionGrad)" />
+  <polygon points="400,340 560,340 640,500 440,500" fill="url(#reflectionGrad)" />
+
+  <!-- Floor joint lines (clean, parallel, elegant) -->
+  <line x1="100" y1="340" x2="20" y2="500" stroke="#78350F" stroke-width="1.5" opacity="0.4" />
+  <line x1="280" y1="340" x2="200" y2="500" stroke="#78350F" stroke-width="1.5" opacity="0.4" />
+  <line x1="460" y1="340" x2="420" y2="500" stroke="#78350F" stroke-width="1.5" opacity="0.4" />
+  <line x1="640" y1="340" x2="680" y2="500" stroke="#78350F" stroke-width="1.5" opacity="0.4" />
+
+  <!-- Bright Window with clear blue sky & sunshine -->
+  <rect x="120" y="50" width="220" height="230" rx="8" fill="#FFFFFF" filter="drop-shadow(0 4px 12px rgba(0,0,0,0.08))" />
+  <rect x="130" y="60" width="95" height="100" fill="url(#skyGrad)" />
+  <rect x="235" y="60" width="95" height="100" fill="url(#skyGrad)" />
+  <rect x="130" y="170" width="95" height="100" fill="url(#skyGrad)" />
+  <rect x="235" y="170" width="95" height="100" fill="url(#skyGrad)" />
+
+  <!-- Sun in window -->
+  <circle cx="280" cy="110" r="28" fill="#FDE047" opacity="0.9" />
+  <circle cx="280" cy="110" r="38" fill="#FEF08A" opacity="0.4" />
+
+  <!-- Diagonal sun ray beam across room -->
+  <polygon points="230,60 340,60 620,500 420,500" fill="#FEF9C3" opacity="0.22" />
+
+  <!-- Glass reflection streak -->
+  <line x1="140" y1="80" x2="200" y2="140" stroke="#FFFFFF" stroke-width="4" opacity="0.6" stroke-linecap="round" />
+  <line x1="245" y1="190" x2="315" y2="255" stroke="#FFFFFF" stroke-width="4" opacity="0.6" stroke-linecap="round" />
+
+  <!-- Pristine Modern Designer Console / Sideboard -->
+  <rect x="420" y="195" width="220" height="145" rx="6" fill="#1E293B" filter="drop-shadow(0 8px 16px rgba(0,0,0,0.15))" />
+  <rect x="430" y="205" width="95" height="125" rx="4" fill="#0F172A" />
+  <rect x="535" y="205" width="95" height="125" rx="4" fill="#0F172A" />
+  <!-- Elegant handles -->
+  <circle cx="510" cy="265" r="4" fill="#F59E0B" />
+  <circle cx="550" cy="265" r="4" fill="#F59E0B" />
+
+  <!-- Decorative Green Plant on Console -->
+  <path d="M515 195 L545 195 L540 170 L520 170 Z" fill="#E2E8F0" />
+  <!-- Leaves -->
+  <ellipse cx="530" cy="145" rx="14" ry="24" fill="#10B981" />
+  <ellipse cx="515" cy="155" rx="18" ry="12" fill="#059669" transform="rotate(-30 515 155)" />
+  <ellipse cx="545" cy="155" rx="18" ry="12" fill="#059669" transform="rotate(30 545 155)" />
+  <ellipse cx="530" cy="135" rx="10" ry="18" fill="#34D399" />
+
+  <!-- SPARKLES & STARS OF CLEANLINESS -->
+  <!-- Sparkle 1 -->
+  <g transform="translate(180, 380)">
+    <path d="M0 -16 Q0 0 16 0 Q0 0 0 16 Q0 0 -16 0 Q0 0 0 -16 Z" fill="#FFFFFF" />
+    <circle cx="0" cy="0" r="3" fill="#0D9488" />
+  </g>
+  <!-- Sparkle 2 -->
+  <g transform="translate(480, 365) scale(1.2)">
+    <path d="M0 -16 Q0 0 16 0 Q0 0 0 16 Q0 0 -16 0 Q0 0 0 -16 Z" fill="#FDE047" />
+    <circle cx="0" cy="0" r="3" fill="#F59E0B" />
+  </g>
+  <!-- Sparkle 3 -->
+  <g transform="translate(320, 240) scale(0.8)">
+    <path d="M0 -16 Q0 0 16 0 Q0 0 0 16 Q0 0 -16 0 Q0 0 0 -16 Z" fill="#38BDF8" />
+  </g>
+  <!-- Sparkle 4 -->
+  <g transform="translate(680, 390) scale(1)">
+    <path d="M0 -16 Q0 0 16 0 Q0 0 0 16 Q0 0 -16 0 Q0 0 0 -16 Z" fill="#FFFFFF" />
+  </g>
+  <!-- Sparkle 5 -->
+  <g transform="translate(430, 180) scale(0.9)">
+    <path d="M0 -16 Q0 0 16 0 Q0 0 0 16 Q0 0 -16 0 Q0 0 0 -16 Z" fill="#10B981" />
+  </g>
+
+  <!-- Clean Room Reflection & Gloss accents -->
+  <ellipse cx="230" cy="440" rx="40" ry="8" fill="#FFFFFF" opacity="0.45" />
+  <ellipse cx="570" cy="450" rx="55" ry="10" fill="#FFFFFF" opacity="0.45" />
+
+  <!-- "ПОСЛЕ УБОРКИ" Tag inside graphic -->
+  <g>
+    <rect x="24" y="24" width="160" height="38" rx="10" fill="#0D9488" opacity="0.95" />
+    <text x="104" y="48" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">ПОСЛЕ УБОРКИ ✨</text>
+  </g>
+</svg>

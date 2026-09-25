@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <linearGradient id="wallGradBefore" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#78716C" />
+      <stop offset="100%" stop-color="#57534E" />
+    </linearGradient>
+    <linearGradient id="floorGradBefore" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#44403C" />
+      <stop offset="100%" stop-color="#292524" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background room wall -->
+  <rect width="800" height="340" fill="url(#wallGradBefore)" />
+  
+  <!-- Baseboard -->
+  <rect y="330" width="800" height="20" fill="#292524" />
+
+  <!-- Floor -->
+  <polygon points="0,340 800,340 800,500 0,500" fill="url(#floorGradBefore)" />
+
+  <!-- Floor planks dirty lines -->
+  <line x1="100" y1="340" x2="20" y2="500" stroke="#1C1917" stroke-width="2" stroke-dasharray="4 6" />
+  <line x1="280" y1="340" x2="200" y2="500" stroke="#1C1917" stroke-width="2" />
+  <line x1="460" y1="340" x2="420" y2="500" stroke="#1C1917" stroke-width="2" stroke-dasharray="6 4" />
+  <line x1="640" y1="340" x2="680" y2="500" stroke="#1C1917" stroke-width="2" />
+
+  <!-- Window with smudges and gray overcast sky -->
+  <rect x="120" y="50" width="220" height="230" rx="8" fill="#94A3B8" />
+  <rect x="130" y="60" width="95" height="100" fill="#64748B" opacity="0.8" />
+  <rect x="235" y="60" width="95" height="100" fill="#64748B" opacity="0.8" />
+  <rect x="130" y="170" width="95" height="100" fill="#64748B" opacity="0.8" />
+  <rect x="235" y="170" width="95" height="100" fill="#64748B" opacity="0.8" />
+
+  <!-- Window smudges -->
+  <path d="M140 80 Q 180 120 160 150" stroke="#CBD5E1" stroke-width="4" opacity="0.3" stroke-linecap="round" />
+  <path d="M250 190 Q 280 200 310 240" stroke="#CBD5E1" stroke-width="6" opacity="0.3" stroke-linecap="round" />
+  <circle cx="270" cy="100" r="14" fill="#475569" opacity="0.4" />
+
+  <!-- Construction dust & paint marks on floor -->
+  <!-- Paint splatters -->
+  <ellipse cx="220" cy="410" rx="45" ry="18" fill="#F8FAFC" opacity="0.4" />
+  <ellipse cx="250" cy="425" rx="15" ry="8" fill="#F8FAFC" opacity="0.5" />
+  <circle cx="170" cy="430" r="8" fill="#F8FAFC" opacity="0.4" />
+  <circle cx="190" cy="400" r="6" fill="#F8FAFC" opacity="0.4" />
+
+  <!-- Dusty footprints / scuffs -->
+  <ellipse cx="440" cy="390" rx="28" ry="12" fill="#78716C" opacity="0.6" transform="rotate(-15 440 390)" />
+  <ellipse cx="480" cy="430" rx="28" ry="12" fill="#78716C" opacity="0.6" transform="rotate(10 480 430)" />
+  <ellipse cx="540" cy="400" rx="28" ry="12" fill="#78716C" opacity="0.6" transform="rotate(-5 540 400)" />
+
+  <!-- Construction debris / trash bags / bucket -->
+  <path d="M600 320 L670 330 L660 410 L590 395 Z" fill="#475569" />
+  <ellipse cx="630" cy="330" rx="35" ry="12" fill="#334155" />
+  <!-- Dried plaster bucket -->
+  <path d="M680 360 L730 360 L720 440 L690 440 Z" fill="#E2E8F0" opacity="0.8" />
+  <ellipse cx="705" cy="360" rx="25" ry="6" fill="#CBD5E1" />
+  <line x1="680" y1="360" x2="690" y2="440" stroke="#94A3B8" stroke-width="2" />
+  
+  <!-- Gray dust haze overlay -->
+  <rect width="800" height="500" fill="#78716C" opacity="0.18" />
+
+  <!-- Stained modern sideboard / furniture -->
+  <rect x="420" y="200" width="220" height="140" rx="4" fill="#3F3F46" />
+  <rect x="430" y="210" width="95" height="115" rx="2" fill="#27272A" />
+  <rect x="535" y="210" width="95" height="115" rx="2" fill="#27272A" />
+  <!-- Dust layer on furniture -->
+  <rect x="420" y="200" width="220" height="12" fill="#A1A1AA" opacity="0.4" />
+  <path d="M440 205 L 560 205" stroke="#E4E4E7" stroke-width="2" opacity="0.3" stroke-linecap="round" />
+
+  <!-- "ДО УБОРКИ" Tag inside graphic -->
+  <g>
+    <rect x="24" y="24" width="140" height="38" rx="10" fill="#EF4444" opacity="0.95" />
+    <text x="94" y="48" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">ДО УБОРКИ</text>
+  </g>
+</svg>
