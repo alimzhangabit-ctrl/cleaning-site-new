@@ -9,13 +9,24 @@ import Advantages from "@/components/Advantages";
 import ShowcaseBanner from "@/components/ShowcaseBanner";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import Workflow from "@/components/Workflow";
-import ContactCTA from "@/components/ContactCTA";
+import LeadForm from "@/components/LeadForm";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
+import QuickCallModal from "@/components/QuickCallModal";
+
+type CalculationData = {
+  tariffId: string;
+  tariffName: string;
+  area: number;
+  price: number;
+  priceRange?: string;
+};
 
 export default function LandingPageClient() {
   const [selectedTariffId, setSelectedTariffId] = useState<string>("general");
+  const [calculationData, setCalculationData] = useState<CalculationData | null>(null);
+  const [isQuickCallOpen, setIsQuickCallOpen] = useState(false);
 
   const handleSelectTariffFromCards = (tariffId: string) => {
     setSelectedTariffId(tariffId);
@@ -23,6 +34,10 @@ export default function LandingPageClient() {
     if (calcSection) {
       calcSection.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const handleApplyCalculation = (data: CalculationData) => {
+    setCalculationData(data);
   };
 
   return (
@@ -33,7 +48,7 @@ export default function LandingPageClient() {
       {/* Main Content Sections */}
       <main className="flex-1">
         {/* 1. Hero Section with Offer & USP */}
-        <Hero />
+        <Hero onOpenQuickCall={() => setIsQuickCallOpen(true)} />
 
         {/* 2. Tariffs & Fixed Pricing Cards */}
         <TariffCards onSelectTariff={handleSelectTariffFromCards} />
@@ -42,6 +57,7 @@ export default function LandingPageClient() {
         <Calculator
           selectedTariffId={selectedTariffId}
           onSelectTariff={setSelectedTariffId}
+          onApplyCalculation={handleApplyCalculation}
         />
 
         {/* 4. Advantages & Security Guarantees */}
@@ -57,7 +73,13 @@ export default function LandingPageClient() {
         <Workflow />
 
         {/* 8. Contact CTA (WhatsApp + Email) */}
-        <ContactCTA />
+        <LeadForm
+          initialTariffId={calculationData?.tariffId}
+          initialArea={calculationData?.area}
+          initialPriceEstimate={
+            calculationData?.priceRange ?? calculationData?.price.toLocaleString("ru-RU")
+          }
+        />
 
         {/* 9. Frequently Asked Questions */}
         <FAQ />
@@ -67,7 +89,12 @@ export default function LandingPageClient() {
       <Footer />
 
       {/* Floating CTA Widget (WhatsApp only) */}
-      <FloatingCTA />
+      <FloatingCTA onOpenQuickCall={() => setIsQuickCallOpen(true)} />
+
+      <QuickCallModal
+        isOpen={isQuickCallOpen}
+        onClose={() => setIsQuickCallOpen(false)}
+      />
     </div>
   );
 }

@@ -1,0 +1,4 @@
+{"timestamp":"00:00:01.411","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:04.549","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:04.661","source":"Browser","level":"WARN","message":"Image with src \"/images/logo.jpg\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes"}
+{"timestamp":"00:00:04.670","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/images/logo.jpg\\\" has \\\"fill\\\" but is missing \\\"sizes\\\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\\u001b[39m\""}
