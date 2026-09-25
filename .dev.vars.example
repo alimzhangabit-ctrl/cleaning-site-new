@@ -1,0 +1,2 @@
+# Use this file as a local template. Store production secrets in Cloudflare.
+NEXTJS_ENV=development
